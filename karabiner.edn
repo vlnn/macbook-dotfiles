@@ -1,0 +1,22 @@
+{:profiles {:goku {:default true, :sim 50, :delay 60, :alone 120, :held 100}},
+ :simlayers
+ {:option-mode  {:key :q},
+  :command-mode {:key :w},
+  :control-mode {:key :e},
+  :shift-mode   {:key :r}},
+ :main
+ [{:des "homerow to mods",
+   :rules
+   [[:a :left_option nil {:alone :a}]
+    [:s :left_command nil {:alone :s}]
+    [:d :left_control nil {:alone :d}]
+    [:f :left_shift nil {:alone :f}]
+    [:semicolon :left_option nil {:alone :semicolon}]
+    [:l :left_command nil {:alone :l}]
+    [:k :left_control nil {:alone :k}]
+    [:j :left_shift nil {:alone :j}]]}
+  {:des "delete to option-DEL and vice versa",
+   :rules
+   [[:delete_or_backspace :!Odelete_or_backspace]
+    [:!Odelete_or_backspace :delete_or_backspace]]}
+  {:des "caps to esc", :rules [[:caps_lock :escape]]}]}
