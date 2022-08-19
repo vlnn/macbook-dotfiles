@@ -1,9 +1,5 @@
-{:profiles {:goku {:default true, :sim 50, :delay 60, :alone 120, :held 100}},
- :simlayers
- {:option-mode  {:key :q},
-  :command-mode {:key :w},
-  :control-mode {:key :e},
-  :shift-mode   {:key :r}},
+(comment "To see next line when fullscreen on new macbook")
+{:profiles {:goku {:default true, :sim 50, :delay 10, :alone 200, :held 100}},
  :main
  [{:des "homerow to mods",
    :rules
