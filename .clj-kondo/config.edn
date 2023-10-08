@@ -1,0 +1,21 @@
+{:linters
+ {:aliased-namespace-symbol              {:level :warning}
+  :case-symbol-test                      {:level :warning}
+  :dynamic-var-not-earmuffed             {:level :error}
+  :equals-true                           {:level :error}
+  :keyword-binding                       {:level :warning}
+  :minus-one                             {:level :error}
+  :plus-one                              {:level :error}
+  :single-key-in                         {:level :warning}
+  :misplaced-docstring                   {:level :warning}
+  :docstring-no-summary                  {:level :warning}
+  :docstring-leading-trailing-whitespace {:level :warning}
+  :missing-body-in-when                  {:level :warning}
+  :missing-else-branch                   {:level :warning}
+  :namespace-name-mismatch               {:level :warning}
+  :redundant-fn-wrapper                  {:level :warning}
+  :redundant-call                        {:level :warning}
+  :redundant-let                         {:level :warning}
+  :refer-all                             {:level :warning, :exclude [clojure.test]}
+  :unused-value                          {:level :warning}
+  :unsorted-required-namespaces          {:level :warning}}}
